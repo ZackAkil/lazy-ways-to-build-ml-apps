@@ -41,7 +41,7 @@
                 function send_image(image_data) {
                     $.ajax({
                         type: "POST",
-                        url: "https://us-central1-feisty-bindery-212509.cloudfunctions.net/image",
+                        url: YOUR CLOUD FUNCTIION URL,
 
                         data: JSON.stringify({
                             "image": image_data
@@ -59,7 +59,6 @@
                                 $("#no-genres").show();
                                 $("#found-object").text(data.labels[0]);
                             }
-
 
 
                         },
@@ -169,11 +168,11 @@
                         <div id="genres">
 
                             <div id="great" class="mdl-components__great" style="display:none">
-                                That's a nice looking teapot, going to look great on our site!
+                                That's a nice looking <strong>teapot</strong>, going to look great on our site!
                             </div>
 
                             <div id="no-genres" class="mdl-components__warning" style="display:none">
-                                Sorry, we don't want <strong id="found-object"></strong> on our site, only teapots!!
+                                Sorry, we don't want your <strong id="found-object"></strong> on our site, only <strong>teapots</strong>!!
                             </div>
 
                             <div id="error" class="mdl-components__error" style="display:none">
